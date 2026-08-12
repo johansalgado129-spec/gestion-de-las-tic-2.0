@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dashboard interactivo para analizar la implementación de una nueva tecnología mediante una matriz de decisión apoyada por IA." />
+  <title>TechDecision AI | Dashboard de decisión tecnológica</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-icon"><span class="brand-mark"></span></div>
+        <div>
+          <strong>TechDecision AI</strong>
+          <span>Gestión tecnológica</span>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#inicio" class="nav-link active"> <span>Inicio</span></a>
+        <a href="#factores" class="nav-link"> <span>Factores</span></a>
+        <a href="#matriz" class="nav-link"> <span>Matriz IA</span></a>
+        <a href="#critica" class="nav-link"> <span>Mirada crítica</span></a>
+        <a href="#juego" class="nav-link"> <span>Juego de aprendizaje</span></a>
+        <a href="#conclusion" class="nav-link"> <span>Conclusión</span></a>
+      </nav>
+
+      <div class="sidebar-note">
+        <span class="mini-badge"> IA aplicada</span>
+        <p>La IA ayuda a ordenar la información, pero la decisión final requiere criterio humano.</p>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
+        <div class="topbar-title">
+          <span class="eyebrow">ENTREGABLE CREATIVO · GESTIÓN DE TECNOLOGÍA</span>
+          <h1>¿Conviene implementar una nueva tecnología?</h1>
+        </div>
+        <div class="ai-status" title="Herramienta apoyada por inteligencia artificial">
+          <span class="status-dot"></span>
+          IA activa
+        </div>
+      </header>
+
+      <section id="inicio" class="hero panel">
+        <div class="hero-copy">
+          <span class="pill"> Decisión estratégica</span>
+          <h2>No se trata de usar tecnología por moda, sino de demostrar que realmente aporta valor.</h2>
+          <p>
+            Este dashboard responde qué debe analizar un gestor de tecnología antes de recomendar una implementación.
+            La decisión combina criterios <strong>técnicos, económicos, humanos y estratégicos</strong>.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="#matriz">Ver matriz de decisión</a>
+            <a class="btn ghost" href="#critica">Cuestionar a la IA</a>
+          </div>
+        </div>
+
+        <div class="score-card">
+          <div class="score-ring" style="--score: 76;">
+            <div class="score-inner">
+              <strong>3.8</strong>
+              <span>/ 5</span>
+            </div>
+          </div>
+          <div class="score-copy">
+            <span class="label">Resultado global</span>
+            <h3>Viable con condiciones</h3>
+            <p>La recomendación es avanzar de forma gradual y con un piloto realista.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats-grid" aria-label="Resumen de análisis">
+        <article class="stat-card">
+          <span class="stat-icon"><span class="icon-dot"></span></span>
+          <div>
+            <small>Factores evaluados</small>
+            <strong>6</strong>
+          </div>
+        </article>
+        <article class="stat-card">
+          <span class="stat-icon"><span class="icon-dot"></span></span>
+          <div>
+            <small>Peso total</small>
+            <strong>100%</strong>
+          </div>
+        </article>
+        <article class="stat-card">
+          <span class="stat-icon"><span class="icon-dot"></span></span>
+          <div>
+            <small>Valoración final</small>
+            <strong>76%</strong>
+          </div>
+        </article>
+        <article class="stat-card">
+          <span class="stat-icon"><span class="icon-dot"></span></span>
+          <div>
+            <small>Recomendaciones cuestionadas</small>
+            <strong>3</strong>
+          </div>
+        </article>
+      </section>
+
+      <section id="factores" class="section-block">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">01 · FACTORES CLAVE</span>
+            <h2>¿Qué debería analizar el gestor de tecnología?</h2>
+          </div>
+          <p>Estos factores permiten evitar una decisión basada únicamente en entusiasmo tecnológico.</p>
+        </div>
+
+        <div class="factor-grid">
+          <article class="factor-card">
+            <div class="factor-head">
+              <span class="factor-emoji"><span class="icon-line"></span></span>
+              <span class="factor-number">01</span>
+            </div>
+            <h3>Impacto en la productividad</h3>
+            <p>Determina si la tecnología reducirá tiempos, automatizará tareas o mejorará la calidad del trabajo.</p>
+            <div class="factor-tag">Prioridad alta</div>
+          </article>
+
+          <article class="factor-card">
+            <div class="factor-head">
+              <span class="factor-emoji"><span class="icon-line"></span></span>
+              <span class="factor-number">02</span>
+            </div>
+            <h3>Costo de implementación</h3>
+            <p>No solo cuenta la compra: también licencias, instalación, capacitación, mantenimiento y actualizaciones.</p>
+            <div class="factor-tag">Revisión financiera</div>
+          </article>
+
+          <article class="factor-card">
+            <div class="factor-head">
+              <span class="factor-emoji"><span class="icon-line"></span></span>
+              <span class="factor-number">03</span>
+            </div>
+            <h3>Compatibilidad</h3>
+            <p>Se debe verificar si puede integrarse con los sistemas, procesos, datos e infraestructura ya existentes.</p>
+            <div class="factor-tag">Riesgo técnico</div>
+          </article>
+
+          <article class="factor-card">
+            <div class="factor-head">
+              <span class="factor-emoji"><span class="icon-line"></span></span>
+              <span class="factor-number">04</span>
+            </div>
+            <h3>Capacitación del personal</h3>
+            <p>Una herramienta útil puede fracasar si las personas no tienen tiempo, habilidades o acompañamiento para adoptarla.</p>
+            <div class="factor-tag">Factor humano</div>
+          </article>
+
+          <article class="factor-card">
+            <div class="factor-head">
+              <span class="factor-emoji"><span class="icon-line"></span></span>
+              <span class="factor-number">05</span>
+            </div>
+            <h3>Seguridad de la información</h3>
+            <p>Debe analizarse la protección de datos, los accesos, las copias de respaldo y los riesgos de ciberseguridad.</p>
+            <div class="factor-tag">Control crítico</div>
+          </article>
+
+          <article class="factor-card">
+            <div class="factor-head">
+              <span class="factor-emoji"><span class="icon-line"></span></span>
+              <span class="factor-number">06</span>
+            </div>
+            <h3>Aceptación y soporte</h3>
+            <p>Incluye resistencia al cambio, facilidad de uso, soporte técnico, continuidad del proveedor y capacidad de respuesta.</p>
+            <div class="factor-tag">Adopción sostenible</div>
+          </article>
+        </div>
+      </section>
+
+      <section id="matriz" class="section-block">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">02 · MATRIZ DE DECISIÓN CON IA</span>
+            <h2>Una forma rápida de convertir criterios en una decisión</h2>
+          </div>
+          <p>Escala de calificación: <strong>1 = muy desfavorable</strong> y <strong>5 = muy favorable</strong>.</p>
+        </div>
+
+        <div class="matrix-layout">
+          <div class="table-card">
+            <div class="table-toolbar">
+              <div>
+                <span class="mini-badge beige"> Modelo ponderado</span>
+                <h3>Matriz de evaluación</h3>
+              </div>
+              <button class="small-btn" id="toggleHelp">¿Cómo se calcula?</button>
+            </div>
+
+            <div class="help-box" id="helpBox">
+              <strong>Fórmula:</strong> Peso × Calificación = Puntaje ponderado.
+              <br>
+              Ejemplo: Productividad → 25% × 5 = <strong>1.25</strong>.
+            </div>
+
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Factor</th>
+                    <th>Peso</th>
+                    <th>Calificación</th>
+                    <th>Resultado</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span></span> Impacto en la productividad</td>
+                    <td>25%</td>
+                    <td><span class="rating">5 / 5</span></td>
+                    <td>1.25</td>
+                  </tr>
+                  <tr>
+                    <td><span></span> Costo de implementación</td>
+                    <td>20%</td>
+                    <td><span class="rating">3 / 5</span></td>
+                    <td>0.60</td>
+                  </tr>
+                  <tr>
+                    <td><span></span> Compatibilidad</td>
+                    <td>15%</td>
+                    <td><span class="rating">4 / 5</span></td>
+                    <td>0.60</td>
+                  </tr>
+                  <tr>
+                    <td><span></span> Capacitación</td>
+                    <td>10%</td>
+                    <td><span class="rating">3 / 5</span></td>
+                    <td>0.30</td>
+                  </tr>
+                  <tr>
+                    <td><span></span> Seguridad</td>
+                    <td>15%</td>
+                    <td><span class="rating">4 / 5</span></td>
+                    <td>0.60</td>
+                  </tr>
+                  <tr>
+                    <td><span></span> Aceptación y soporte</td>
+                    <td>15%</td>
+                    <td><span class="rating">3 / 5</span></td>
+                    <td>0.45</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td>Total</td>
+                    <td>100%</td>
+                    <td>—</td>
+                    <td>3.80 / 5</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+
+          <aside class="decision-card">
+            <span class="decision-icon"><span class="decision-check"></span></span>
+            <span class="section-kicker">LECTURA DEL RESULTADO</span>
+            <h3>Implementar, pero no de golpe.</h3>
+            <p>
+              Un puntaje de <strong>3.8/5</strong> indica una decisión favorable, aunque todavía existen aspectos que deben controlarse.
+            </p>
+
+            <div class="progress-group">
+              <div class="progress-label">
+                <span>Conveniencia</span>
+                <strong>76%</strong>
+              </div>
+              <div class="progress"><span style="width: 76%"></span></div>
+            </div>
+
+            <ul class="check-list">
+              <li>— Ejecutar una prueba piloto.</li>
+              <li>— Medir productividad antes y después.</li>
+              <li>— Incluir costos ocultos.</li>
+              <li>— Capacitar al personal.</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section id="critica" class="section-block">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">03 · MIRADA CRÍTICA A LA IA</span>
+            <h2>La IA recomienda… pero también debemos cuestionarla </h2>
+          </div>
+          <p>Una buena decisión tecnológica no consiste en aceptar automáticamente lo que propone un algoritmo.</p>
+        </div>
+
+        <div class="critique-grid">
+          <article class="critique-card">
+            <div class="critique-top">
+              <span class="bubble">1</span>
+              <span class="ai-chip">Recomendación IA</span>
+            </div>
+            <h3>“Más tecnología = más productividad”</h3>
+            <div class="divider"></div>
+            <span class="challenge-label"> Cuestionamiento</span>
+            <p>
+              No siempre. Si el personal no domina la herramienta, durante la adaptación incluso puede disminuir el rendimiento.
+            </p>
+            <strong class="question">¿La empresa está preparada para cambiar?</strong>
+          </article>
+
+          <article class="critique-card">
+            <div class="critique-top">
+              <span class="bubble">2</span>
+              <span class="ai-chip">Recomendación IA</span>
+            </div>
+            <h3>“El costo es aceptable porque se recupera después”</h3>
+            <div class="divider"></div>
+            <span class="challenge-label"> Cuestionamiento</span>
+            <p>
+              Debe calcularse el costo total: compra, licencias, capacitación, integración, mantenimiento y futuras actualizaciones.
+            </p>
+            <strong class="question">¿Se evaluó realmente el retorno de inversión?</strong>
+          </article>
+
+          <article class="critique-card">
+            <div class="critique-top">
+              <span class="bubble">3</span>
+              <span class="ai-chip">Recomendación IA</span>
+            </div>
+            <h3>“Un piloto pequeño es suficiente”</h3>
+            <div class="divider"></div>
+            <span class="challenge-label"> Cuestionamiento</span>
+            <p>
+              Una prueba demasiado limitada puede ocultar problemas que solo aparecen cuando la tecnología opera con toda la organización.
+            </p>
+            <strong class="question">¿El piloto representa condiciones reales?</strong>
+          </article>
+        </div>
+      </section>
+
+
+      <section id="juego" class="section-block">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">04 · JUEGO DE APRENDIZAJE</span>
+            <h2>Reto: toma la mejor decisión tecnológica</h2>
+          </div>
+          <p>Responde cinco escenarios breves. Cada respuesta correcta suma 20 puntos.</p>
+        </div>
+
+        <div class="game-shell">
+          <div class="game-header">
+            <div>
+              <span class="mini-badge beige">Simulador de decisiones</span>
+              <h3 id="gameTitle">Escenario 1 de 5</h3>
+            </div>
+
+            <div class="game-score">
+              <span>Puntaje</span>
+              <strong id="scoreValue">0</strong>
+              <small>/100</small>
+            </div>
+          </div>
+
+          <div class="game-progress">
+            <span id="gameProgressBar" style="width:20%"></span>
+          </div>
+
+          <div class="game-card" id="gameCard">
+            <span class="scenario-label">CASO EMPRESARIAL</span>
+            <h3 id="questionText"></h3>
+            <p id="questionContext"></p>
+
+            <div class="answer-grid" id="answerGrid"></div>
+
+            <div class="feedback-box" id="feedbackBox" aria-live="polite"></div>
+
+            <div class="game-actions">
+              <button class="btn primary game-next" id="nextQuestionBtn" disabled>Siguiente escenario</button>
+            </div>
+          </div>
+
+          <div class="game-result" id="gameResult">
+            <span class="result-mark"></span>
+            <span class="section-kicker">RESULTADO FINAL</span>
+            <h3 id="finalScoreTitle">Resultado</h3>
+            <p id="finalScoreText"></p>
+
+            <div class="result-scale">
+              <div>
+                <span>0–40</span>
+                <small>Debes reforzar</small>
+              </div>
+              <div>
+                <span>60–80</span>
+                <small>Buen criterio</small>
+              </div>
+              <div>
+                <span>100</span>
+                <small>Gestor estratégico</small>
+              </div>
+            </div>
+
+            <button class="btn primary" id="restartGameBtn">Volver a jugar</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="conclusion" class="conclusion panel">
+        <div class="conclusion-icon"><span class="target-mark"></span></div>
+        <div>
+          <span class="section-kicker light">CONCLUSIÓN</span>
+          <h2>La mejor decisión combina datos + contexto + criterio humano.</h2>
+          <p>
+            Un gestor de tecnología debe revisar variables técnicas, económicas y humanas antes de recomendar una implementación.
+            La inteligencia artificial es útil para organizar y comparar información, pero <strong>no reemplaza la evaluación del contexto real de la empresa</strong>.
+          </p>
+        </div>
+        <div class="conclusion-badge">IA + juicio humano = mejor decisión</div>
+      </section>
+
+      <footer>
+        <p>Dashboard académico · Gestión de Tecnología · Herramienta creativa construida con apoyo de IA</p>
+      </footer>
+    </main>
+  </div>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
